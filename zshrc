@@ -1,7 +1,8 @@
 echo 'Hello from .zshrc'
 
 # Set Variables
-
+# Syntax highlighting for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Change ZSH Options
 
@@ -16,13 +17,20 @@ PROMPT='
 
 RPROMPT='%*'
 
+# Add Locations to $path Array
+typeset -U path
 
-# Add Locations to $PATH Variable
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
+
+
+# Write Handy Functions
 function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
-
-# Write Handy Functions
 
 
 # Use ZSH Plugins
