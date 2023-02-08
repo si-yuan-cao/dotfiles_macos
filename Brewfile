@@ -1,14 +1,10 @@
-# Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-
-# Brews (Packages)
 brew "bat"
-brew "httpie"
 brew "exa"
-
-# Casks (Applications)
+brew "git"
+brew "httpie"
 cask "clashx"
 cask "fork"
 cask "google-chrome"
