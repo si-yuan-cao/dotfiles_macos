@@ -22,8 +22,3 @@ cask "fork"
 cask "google-chrome"
 # Open-source code editor
 cask "visual-studio-code"
-mas "iMovie 剪辑", id: 408981434
-mas "Keynote 讲演", id: 409183694
-mas "Numbers 表格", id: 409203825
-mas "Pages 文稿", id: 409201541
-mas "库乐队", id: 682658836

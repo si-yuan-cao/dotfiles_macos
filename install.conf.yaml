@@ -8,6 +8,12 @@
     ~/.vimrc:
     ~/.zshrc:
     ~/.gitconfig:
+    ~/.config/bat:
+      create: true
+      path: config/bat
+    ~/.config/clash:
+      create: true
+      path: config/clash
 
 - create:
     - ~/Coding
