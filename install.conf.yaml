@@ -7,6 +7,7 @@
 - link:
     ~/.vimrc:
     ~/.zshrc:
+    ~/.zshenv:     
     ~/.gitconfig:
     ~/.config/bat:
       create: true
