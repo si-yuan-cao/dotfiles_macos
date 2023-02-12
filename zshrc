@@ -1,17 +1,22 @@
-echo 'Hello from .zshrc'
-
 # Set Variables
-export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
+export DOTFILES="$HOME/.dotfiles"
+export HOMEBREW_BUNDLE_FILE="$DOTFILES/Brewfile"
 
 # Change ZSH Options
 
 
 # Create Aliases
-# alias ls='ls -lAFh'
-alias ls='exa -laFh --git'
+alias ls='exa'
 alias exa='exa -laFh --git'
+alias trail='<<<${(F)path}'
+alias ftrail='<<<${(F)fpath}'
+alias rm=trash
 alias man=batman
+alias bbd="brew bundle dump --force --describe"
 
+# Load history into shell (shareHistory alternative)
+alias lh='fc -RI; echo "loaded and showing..."; history;'
 
 # Customize Prompt(s)
 PROMPT='
